@@ -1,0 +1,27 @@
+Exercícios:
+Analise os seguintes estudos de caso e aplique um redesenho ou reengenharia, priorizando a adoção de sistemas de informação.
+
+
+Estudo de Caso 1 – Livraria
+    A livraria só atende a clientes cadastrados. Os clientes são cadastrados pela Gerência Operacional da livraria, que cadastra também os livros disponíveis para venda. Os pedidos dos clientes são feitos por telefone ou correio eletrônico. Sempre que um cliente faz um pedido, este (o pedido) vai para o cadastro de pedidos e é atendido pelo vendedor, que verifica o estoque da livraria. Uma vez atendido o pedido, emite-se uma nota fiscal. 
+    Todas as compras são pagas a prazo (30 dias), sem entrada. A emissão do boleto de cobrança é efetuada pelo vendedor, após a emissão da nota fiscal. 
+    O estoque da livraria é atualizado por um funcionário, que conta os livros ao final do expediente. 
+    O vendedor pode realizar consultas aos relatórios gerados pelo funcionário que controla o estoque e a     Gerência Operacional recebe relatórios de todas as operações da livraria.
+
+Usaria um site para os clientes se cadastrarem (em um banco de dados), assim os pedidos dos clientes poderiam ser feitos pelo site. O site mostraria todos os livros disponíveis no estoque.
+Após feita a compra automaticamente será emitida a nota fiscal, e atualizada a quantidade de livro no banco de dados.
+A Gerência Operacional poderá receber os relatórios sempre no fim do expediente.
+
+
+
+Estudo de Caso 2 – Fábrica de Móveis
+    A empresa ABC fabrica móveis somente por encomenda. Os clientes devem procurar a empresa (pessoalmente ou via telefone) para solicitar um orçamento. 
+    Sempre que um cliente faz contato, a secretária da empresa anota na agenda a solicitação e aguarda que um funcionário esteja disponível para atender.
+    Ao encontrar um funcionário disponível, este se responsabiliza por fazer o orçamento, que depois de fechado, deverá ser encaminhado para a secretária, que entra em contato com o cliente para informar o valor do serviço. Caso o cliente queira mais detalhes do orçamento, deverá agendar um horário para ir a empresa pessoalmente.
+    Se o cliente fechar contrato, o funcionário precisará verificar se tem material disponível. Caso não possua material, a secretária entra em contato com fornecedores daquele material para fazer um levantamento de preços. Toda vez que um material é adquirido, a secretária anota em uma planilha a quantidade comprada e o prazo para pagamento do fornecedor. 
+    O cliente deverá entrar em contato com o gerente para combinar as condições de pagamento do serviço solicitado.
+    Atualmente, a empresa apresenta dificuldade de controlar suas receitas e despesas, pois não existe um controle rigoroso dos serviços realizados.
+
+
+Usaria um sistema interno para facilitar a comunicação entre o pedido e o funcionário, e facilitaria também o envio do orçamento para o cliente. Para que agilize o serviço, antes de enviar o orçamento para o cliente o funcionário iria verificar se tem os materiais necessários caso não tenha, entraria em contato com os fornecedores. 
+Caso o cliente aceite o orçamento será enviado para o funcionário (se o funcionário precisar de algum material fará um pedido que será salvo no sistema para que sempre que precisar a secretaria poderá receber um relatório.
